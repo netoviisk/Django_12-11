@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gerenciamento de Tarefas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        .navbar {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+        }
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;  
+
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">  
+
+        <h1>Gerenciamento de Tarefas</h1>
+    </div>
+    <div>
+        <a href="{% url 'cadastrar_usuario' %}" class="button">Cadastro de Usuários</a>
+        <a href="{% url 'cadastrar_tarefa' %}" class="button">Cadastro de Tarefas</a>
+        <a href="{% url 'gerenciar_tarefas' %}" class="button">Gerenciar Tarefas</a>
+    </div>
+</body>
+</html>
